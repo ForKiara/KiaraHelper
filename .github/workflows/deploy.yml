@@ -33,6 +33,7 @@ jobs:
          timeout-minutes: 350
          continue-on-error: true
          run: |
+           cd kiarabot
            docker build . -t kiarabot
            docker run kiarabot
        - name: "♻️ Re-Run Kiara Server ♻️"
